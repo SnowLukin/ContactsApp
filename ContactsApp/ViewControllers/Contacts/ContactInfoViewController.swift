@@ -84,7 +84,7 @@ extension ContactInfoViewController {
         contactInfoSections[section].count
     }
     
-    //
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Image Cell
