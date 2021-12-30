@@ -32,15 +32,6 @@ class TabBarViewController: UITabBarController {
                 }
             }
         }
-        
-        for viewController in viewControllers {
-            if let navigationVC = viewController as? UINavigationController {
-                let personListVC = navigationVC.topViewController as? ContactListViewController
-                personListVC?.contacts = person
-                let personListWithSectVC = navigationVC.topViewController as? ExpendedContactListViewController
-                personListWithSectVC?.contacts = person
-            }
-        }
     }
     
     
