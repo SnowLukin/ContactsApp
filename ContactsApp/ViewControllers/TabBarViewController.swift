@@ -26,8 +26,7 @@ class TabBarViewController: UITabBarController {
             if let navVC = viewController as? UINavigationController {
                 if let contactVC = navVC.topViewController as? ContactListViewController {
                     contactVC.contacts = person
-                }
-                if let expendedContactVC = navVC.topViewController as? ExpendedContactListViewController {
+                } else if let expendedContactVC = navVC.topViewController as? ExpendedContactListViewController {
                     expendedContactVC.contacts = person
                 }
             }
