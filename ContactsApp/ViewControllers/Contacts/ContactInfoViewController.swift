@@ -90,7 +90,6 @@ extension ContactInfoViewController {
         // Image Cell
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath) as! ImageViewCell
-            // setting corner radius in case we get square image (not default)
             cell.contactImageView.layer.cornerRadius = cell.contactImageView.frame.width / 2
             cell.contactImageView.image = UIImage(named: contactInfoSections[indexPath.section][indexPath.row])
             return cell
